@@ -5,6 +5,10 @@
     border-radius: 20%;
 }
 
+.col-md-3 {
+    background: lightblue;
+}
+
 .col-1 {
     position: relative;
     background: indianred;
@@ -73,4 +77,9 @@
 
 .card-nope {
     background-color: goldenrod;
+}
+
+.card-wide {
+    width: 100%;
+    background-color: blanchedalmond;
 }
