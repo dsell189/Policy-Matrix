@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Policy Matrix Beta</title>
-    
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
@@ -45,6 +45,7 @@
 
     </div>
     <div class="tab-content" id="myTab">
+        <!-- Matrix Focus -->
         <div class="tab-pane fade show active" id="matrix-focus" role="tabpanel">
             <!-- City Tab -->
             <div class="container my-5" id="matrix-f">
@@ -61,20 +62,21 @@
                     <div class="navbar-brand">Policy Matrix - <i>BETA</i></div>
                     <div class="nav nav-tabs" id="nav-tab-cities" role="tablist">
                         <button class="nav-link active" id="nav-Louisa-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-Louisa" type="button" role="tab" aria-controls="nav-Louisa"
-                            >Louisa</button>
+                            data-bs-target="#nav-Louisa" type="button" role="tab"
+                            aria-controls="nav-Louisa">Louisa</button>
 
                         <button class="nav-link" id="nav-Albemarle-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-Albemarle" type="button" role="tab" aria-controls="nav-Albemarle"
-                            >Albemarle</button>
-
+                            data-bs-target="#nav-Albemarle" type="button" role="tab"
+                            aria-controls="nav-Albemarle">Albemarle</button>
+                        <!--
                         <button class="nav-link" id="nav-Charlottesville-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-Charlottesville" type="button" role="tab" aria-controls="nav-Charlottesville"
-                            >Charlottesville</button>
+                            data-bs-target="#nav-Charlottesville" type="button" role="tab"
+                            aria-controls="nav-Charlottesville">Charlottesville</button>
+                        -->
                     </div>
                 </nav>
 
-                <div class="tab-content" >
+                <div class="tab-content">
                     <!-- Louisa Content -->
                     <div class="tab-pane show active p-3" id="nav-Louisa" role="tabpanel">
                         <div class="container my-5">
@@ -102,7 +104,7 @@
 
                                         <button class="nav-link" id="nav-inner-2-1-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-inner-2-1" type="button" role="tab"
-                                            aria-controls="nav-inner-2-1" >Developer
+                                            aria-controls="nav-inner-2-1">Developer
                                             Incentives</button>
 
                                         <button class="nav-link" id="nav-inner-3-1-tab" data-bs-toggle="tab"
@@ -159,13 +161,11 @@
                                                                     displacement among existing
                                                                     residents who struggle to afford the higher housing
                                                                     costs.</p>
-                                                                
-                                                                    <button class="btn nav-link" 
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#prevention-content-box-one" type="button"
-                                                                        
-                                                                        >More Info.</button>
-                                                                
+
+                                                                <button class="btn nav-link" data-bs-toggle="tab"
+                                                                    data-bs-target="#prevention-content-box-one"
+                                                                    type="button">More Info.</button>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -183,10 +183,9 @@
                                                                     contraints.
                                                                 </p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" 
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#prevention-content-box-two" type="button"
-                                                                        >More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#prevention-content-box-two"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -200,11 +199,11 @@
                                                                 <p class="card-text">Resources to cover or supplement
                                                                     housing costs
                                                                     for low-income renters. </p>
-                                                                <button class="btn nav-link" 
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#prevention-content-box-three" type="button"
-                                                                   
-                                                                    >More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#prevention-content-box-three"
+                                                                        type="button">More Info.</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -219,11 +218,11 @@
                                                                     that
                                                                     homeowners have to pay as a share of their income.
                                                                 </p>
-                                                                <button class="btn nav-link" 
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#prevention-content-box-four" type="button"
-                                                                   
-                                                                    >More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#prevention-content-box-four"
+                                                                        type="button">More Info.</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -232,44 +231,70 @@
 
                                                 <div class="container content-box" id="prevention-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="prevention-content-box-one"
-                                                            role="tabpanel">
-                                                            <div class="content-item">
-                                                                There is currently no policy in place for
-                                                                Anti-Displacement.
-                                                                <br> <br>
+                                                        <div class="tab-pane fade show active p-3"
+                                                            id="prevention-content-box-one" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Anti-Displacement</h5>
+                                                                There is currently no policy in place for Anti-Displacement.
+                                                                <br> <br>                                                
+                                                                <img src="images/tools.svg" class="box-img-top"
+                                                                    alt="..." title="Toolkit">
+                                                                <strong>Toolkit:</strong> <br> 
                                                                 <a
-                                                                    href="https://localhousingsolutions.org/plan/developing-an-anti-displacement-strategy/#:~:text=As%20shown%20in%20the%20diagram,existing%20affordable%20housing%2C%20and%20produces">
-                                                                    Developing an Anti-Displacement Strategy </a>
+                                                                href="https://localhousingsolutions.org/plan/developing-an-anti-displacement-strategy/#:~:text=As%20shown%20in%20the%20diagram,existing%20affordable%20housing%2C%20and%20produces">
+                                                                Developing an Anti-Displacement Strategy </a>
+                                                                
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="prevention-content-box-two"
-                                                            role="tabpanel">
-                                                            <div class="content-item">
-                                                                There are currently no policies in place specific to
-                                                                Aging
-                                                                in Place. <br> <br>
+                                                        <div class="tab-pane fade show  p-3"
+                                                            id="prevention-content-box-two" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Aging In Place</h5>
+                                                                There are currently no policies in place specific to Aging in Place.
+                                                                <br> <br>
                                                                 HUD's Aging in Place <a
                                                                     href="https://www.huduser.gov/portal/periodicals/em/fall13/highlight1.html">
                                                                     Blog Post </a> <br> <br>
                                                                     <img src="images/clipboard.svg" class="box-img-top" alt="..."
-                                                                    title="Community Resource">
+                                                                    title="Community Resource"> 
                                                                 <strong>Community Resources:</strong> <br>
                                                                 <a
                                                                     href="https://www.fluvannalouisahousing.org/services">
                                                                     Fluvanna Louisa Housing Foundation </a>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="prevention-content-box-three"
-                                                            role="tabpanel">
-                                                            <div class="content-item">There are currently no policies or
-                                                                resources in place at the county for rental assistance.
-                                                                <br>
-                                                                <br>
+                                                        <div class="tab-pane fade show  p-3"
+                                                            id="prevention-content-box-three" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Rental Assistance</h5>
+                                                                There are currently no policies or
+                                                                resources in place at the county for rental
+                                                                assistance.
+                                                                <br><br>
+                                                                <img src="images/clipboard.svg" class="box-img-top" alt="..."
+                                                                    title="Community Resource">
                                                                 <strong>Community Resources:</strong> <br>
                                                                 <a
                                                                     href="https://louisacommunityemergencyfund.org/get-help.html">
-                                                                    Louisa Community Emergenccy Fund</a>
+                                                                    Louisa Community Emergency Fund</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3"
+                                                            id="prevention-content-box-four" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Property Tax Exemption</h5>
+                                                                <i>"A real estate tax exemption is provided for qualified property owners who 
+                                                                    are not less than 65 years of age or permanently and totally disabled"</i>
+                                                                <br>
+                                                                See <a
+                                                                    href="https://library.municode.com/va/louisa_county/codes/code_of_ordinances?nodeId=CO_CH70TA_ARTIIREESTAREELTODI_S70-31EXUT">
+                                                                    Sec. Sec. 70-31 </a> for specific ordinances
+                                                                <br> <br>
+                                                                <img src="images/book.svg" class="box-img-top" alt="..."
+                                                                    title="Policy Brief">
+                                                                <strong>Policy Brief:</strong> <br> <a
+                                                                    href="https://localhousingsolutions.org/housing-policy-library/property-tax-relief-for-income-qualified-homeowners/">
+                                                                    Property Tax Relief</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -295,11 +320,11 @@
                                                                     and owner occupants who create or preserve
                                                                     affordable
                                                                     housing.</p>
-                                                                
-                                                                    <button class="btn nav-link"
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#incentive-box-one" type="button">More Info.</button>
-                                                                
+
+                                                                <button class="btn nav-link" data-bs-toggle="tab"
+                                                                    data-bs-target="#incentive-box-one"
+                                                                    type="button">More Info.</button>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -316,10 +341,9 @@
 
                                                                 </p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" 
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#incentive-box-two" type="button"
-                                                                        >More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#incentive-box-two"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -334,9 +358,9 @@
                                                                     parking requirements.
                                                                 </p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link"
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#incentive-box-three" type="button">More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#incentive-box-three"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -354,9 +378,9 @@
                                                                     for
                                                                     lower-income households.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link"
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#incentive-box-four" type="button">More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#incentive-box-four"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -375,10 +399,9 @@
                                                                     number
                                                                     of below-market units.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" 
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#incentive-box-five" type="button"
-                                                                        >More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#incentive-box-five"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -386,17 +409,19 @@
 
                                                     <div class="content-item">
                                                         <div class="card" style="width: 18rem;">
-                                                            <img src="images/circle-fill.svg" class="card-img-top" alt="...">
+                                                            <img src="images/circle-fill.svg" class="card-img-top"
+                                                                alt="...">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Affordable Dwelling Units</h5>
-                                                                <p class="card-text">Units that are priced affordably, and are often income restricted, that are incentivized by the locality
+                                                                <p class="card-text">Units that are priced affordably,
+                                                                    and are often income restricted, that are
+                                                                    incentivized by the locality
                                                                     to increase affordable housing stock.
-                                                                    </p>
+                                                                </p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link"
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#incentive-box-six" type="button"
-                                                                        >More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#incentive-box-six"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -407,12 +432,14 @@
 
                                                 <div class="container content-box" id="incentive-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="incentive-box-one"
-                                                            role="tabpanel">
-                                                            <div class="content-item">
+                                                        <div class="tab-pane fade show active p-3"
+                                                            id="incentive-box-one" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Tax Abatement</h5>
                                                                 There are currently no tax abatement policies in place
-                                                                for
-                                                                affordable housing development. <br> <br>
+                                                                    for
+                                                                    affordable housing development.
+                                                                <br> <br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Policy Brief">
                                                                 <strong>Policy Brief:</strong> <br> <a
@@ -422,9 +449,10 @@
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="incentive-box-two"
                                                             role="tabpanel">
-                                                            <div class="content-item">
-                                                                There are currently no fee waiver policies in place 
-                                                                for affordable housing development.
+                                                            <div class="content-item-bot">
+                                                                <h5>Fee Waiver</h5>
+                                                                There are currently no fee waiver policies in place
+                                                                    for affordable housing development.
                                                                 <br> <br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Policy Brief">
@@ -435,9 +463,11 @@
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="incentive-box-three"
                                                             role="tabpanel">
-                                                            <div class="content-item">
-                                                                There are currently no parking reduction or waiver policies in place 
-                                                                for affordable housing development.
+                                                            <div class="content-item-bot">
+                                                                <h5>Parking Reduction/Waiver</h5>
+                                                                There are currently no parking reduction or waiver
+                                                                    policies in place
+                                                                    for affordable housing development.
                                                                 <br> <br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Policy Brief">
@@ -448,12 +478,12 @@
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="incentive-box-four"
                                                             role="tabpanel">
-                                                            <div class="content-item">
-                                                                There are currently no fast-track review policies in place 
-                                                                for affordable housing development.
+                                                            <div class="content-item-bot">
+                                                                <h5>Fast Track Review</h5>
+                                                                There are currently no fast-track review policies in place for affordable housing development.
                                                                 <br> <br>
-                                                                <img src="images/tools.svg" class="box-img-top" alt="..."
-                                                                    title="Toolkit">
+                                                                <img src="images/tools.svg" class="box-img-top"
+                                                                    alt="..." title="Toolkit">
                                                                 <strong>Toolkit:</strong> <br> <a
                                                                     href="https://affordablehousing.miami.edu/toolkits/miami-housing-policy-toolkit/expedite-permitting-process/index.html">
                                                                     Miami Housing Solutions Lab Expedited Process </a>
@@ -467,16 +497,22 @@
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="incentive-box-five"
                                                             role="tabpanel">
-                                                            <div class="content-item">
-                                                                The zoning administrator may allow up to three additional lots for a subdivision, <br>
-                                                                for a total of up to ten lots, in the following circumstances: <br>
-                                                                 <br> 
-                                                                A density bonus of three additional lots for a subdivision when <br>
-                                                                at least three lots are dedicated for affordable housing. 
+                                                            <div class="content-item-bot">
+                                                                <h5>Density Bonus </h5>
+                                                                    The zoning administrator may allow up to three
+                                                                    additional lots for a subdivision,
+                                                                    for a total of up to ten lots, in the following
+                                                                    circumstances: <br>
+                                                                <br>
+                                                                A density bonus of three additional lots for a
+                                                                subdivision when <br>
+                                                                at least three lots are dedicated for affordable
+                                                                housing.
                                                                 <br> <br>
                                                                 See <a
                                                                     href="https://library.municode.com/va/louisa_county/codes/code_of_ordinances?nodeId=CO_CH86LADERE_ARTIIZOORMA_DIV6ZODILAUS_S86-161SU">
-                                                                    Sec. 86-13. Definitions </a> for specific ordinances <br> <br>
+                                                                    Sec. 86-13. Definitions </a> for specific ordinances
+                                                                <br> <br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Policy Brief">
                                                                 <strong>Policy Brief:</strong> <br> <a
@@ -486,9 +522,9 @@
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="incentive-box-six"
                                                             role="tabpanel">
-                                                            <div class="content-item">
-                                                                There are currently no parking reduction or waiver policies in place 
-                                                                for affordable housing development.
+                                                            <div class="content-item-bot">
+                                                                <h5>Parking Reduction/Waivers</h5>
+                                                                There are currently no parking reduction or waiver policies in place for affordable housing development.
                                                                 <br> <br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Policy Brief">
@@ -519,14 +555,15 @@
                                                                     <i>AKA 'Accessory Apartments'</i>.
                                                                 </p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="zoning-box-one-desc"
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#zoning-box-one" type="button">More Info.</button>
+                                                                    <button class="btn nav-link"
+                                                                        id="zoning-box-one-desc" data-bs-toggle="tab"
+                                                                        data-bs-target="#zoning-box-one"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class="content-item">
                                                         <div class="card" style="width: 18rem;">
                                                             <div class="card-body">
@@ -535,9 +572,12 @@
                                                                     local destinations
                                                                     by reactivating underutilized buildings and lots to
                                                                     align with community needs.</p>
-                                                                <button class="btn nav-link" id="zoning-box-two-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#zoning-box-two" type="button">More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link"
+                                                                            id="zoning-box-two-desc" data-bs-toggle="tab"
+                                                                            data-bs-target="#zoning-box-two"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
 
                                                         </div>
@@ -549,9 +589,12 @@
                                                                 <h5>Short Term Rental</h5>
                                                                 <p>Furnished homes or rooms rented on a short-term basis
                                                                     (i.e. AirBnb or VRBO).</p>
-                                                                <button class="btn nav-link" id="zoning-box-three-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#zoning-box-three" type="button">More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link"
+                                                                            id="zoning-box-three-desc" data-bs-toggle="tab"
+                                                                            data-bs-target="#zoning-box-three"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
 
                                                         </div>
@@ -564,8 +607,9 @@
                                                     <div class="tab-content">
                                                         <div class="tab-pane fade show active p-3" id="zoning-box-one"
                                                             role="tabpanel">
-                                                            <div class="content-item">By Right in Agricultural and
-                                                                Residential Zones <br> <br>
+                                                            <div class="content-item-bot">
+                                                                <h5>Accessory Dwelling Units</h5> 
+                                                                By Right in Agricultural and Residential Zones<br> <br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Municipal Code">
                                                                 See <a
@@ -575,9 +619,10 @@
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="zoning-box-two"
                                                             role="tabpanel">
-                                                            <div class="content-item">No multifamily dwellings allowed
-                                                                by
-                                                                right. <br> <br>
+                                                            <div class="content-item-bot">
+                                                                <h5>Infill</h5>
+                                                                No multifamily dwelling developments allowed by right.
+                                                                <br><br>
                                                                 <img src="images/book.svg" class="box-img-top" alt="..."
                                                                     title="Municipal Code">
                                                                 See <a
@@ -585,6 +630,19 @@
                                                                     Sec. 86-109. - Zoning District Use Matrix table </a>
                                                                 for
                                                                 specific ordinances
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="zoning-box-three"
+                                                            role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Short Term Rentals</h5> 
+                                                                There are currently no restrictions on shert term rentals.
+                                                                <br> <br>
+                                                                <img src="images/book.svg" class="box-img-top" alt="..."
+                                                                    title="Policy Brief">
+                                                                <strong>Policy Brief:</strong> <br> <a
+                                                                    href="https://localhousingsolutions.org/housing-policy-library/regulating-short-term-rentals/">
+                                                                    Regulating Short Term Rentals </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -607,10 +665,9 @@
                                                                     homelessness.
                                                                 </p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link"
-                                                                        data-bs-toggle="tab"
-                                                                        data-bs-target="#homelessness-box-one" type="button"
-                                                                        >More Info.</button>
+                                                                    <button class="btn nav-link" data-bs-toggle="tab"
+                                                                        data-bs-target="#homelessness-box-one"
+                                                                        type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -623,10 +680,11 @@
                                                                     supportive
                                                                     services so that chronically homeless individuals
                                                                     can lead more stable lives</p>
-                                                                <button class="btn nav-link" 
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#homelessness-box-two" type="button"
-                                                                    >More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" data-bs-toggle="tab"
+                                                                            data-bs-target="#homelessness-box-two"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
 
                                                         </div>
@@ -641,10 +699,11 @@
                                                                     families
                                                                     before finding appropriate housing that meets their
                                                                     long-term needs</p>
-                                                                <button class="btn nav-link"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#homelessness-box-three" type="button"
-                                                                    >More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" data-bs-toggle="tab"
+                                                                            data-bs-target="#homelessness-box-three"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
 
                                                         </div>
@@ -655,33 +714,79 @@
 
                                                 <div class="container content-bottom" id="homelessness-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="homelessness-box-one"
-                                                            role="tabpanel" >
-                                                            <div class="content-item">There are no Housing First
+                                                        <div class="tab-pane fade show active p-3"
+                                                            id="homelessness-box-one" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Housing First</h5> 
+                                                                There are no Housing First
                                                                 policies
-                                                                currently in place. <br> <br>
+                                                                currently in place. <br><br>
                                                                 What is <a
                                                                     href="https://endhomelessness.org/resource/housing-first/">
                                                                     Housing First? </a>
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="homelessness-box-two"
-                                                            role="tabpanel" >
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                            role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Supportive Housing </h5>
+                                                                     <p>Supportive Housing may be referenced as a 'Group Home' in Louisa County code,
+                                                                        but only in the case of disability or mental illness.<br>
+                                                                        <i>"For the purposes of this subsection,
+                                                                         mental illness and developmental disability shall not include current illegal use of or addiction
+                                                                        to a controlled substance as defined in the Code of Virginia, § 54.1-3401." </i><br>
+                                                                    </p>
+                                                                      See <a
+                                                                    href="https://library.municode.com/va/louisa_county/codes/code_of_ordinances?nodeId=CO_CH86LADERE_ARTIGEPR_DIV2DE_S86-13DE">
+                                                                    Sec. 86-13. Definitions </a> for specific ordinances.
+                                                                    <br><br>
+                                                                      What is <a
+                                                                      href="https://unitedtoendhomelessness.org/blog/types-of-housing-support-for-the-homeless/">
+                                                                      Supportive Housing? </a>
+
+                                                                    <br><br>
+                                                                <img src="images/clipboard.svg" class="box-img-top" alt="..."
+                                                                    title="Community Resource">
+                                                                      <strong>Community Resources:</strong> <br>
+                                                            
+                                                                <a
+                                                                    href="https://journeyhomemineral.org/">
+                                                                    Journey Home in Mineral,VA </a> <br>
+                                                                    Christ-centered transitional housing to individuals or families in need of a
+                                                                    temporary place to live [up to 18 months].
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="homelessness-box-three"
-                                                            role="tabpanel" >
-                                                            <div class="content-item">In depth information about policy
-                                                                three.
+                                                            role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Shelters </h5> 
+                                                                There are no local shelters in Louisa. <br>
+                                                                There are shelter resources in surrounding localities.
+                                                                <br><br>
+                                                                <p>
+                                                                    <img src="images/clipboard.svg" class="box-img-top" alt="..."
+                                                                        title="Community Resource">
+                                                                          <strong>Community Resources:</strong> <br>
+                                                                          
+                                                                    <a
+                                                                        href="https://www.warmwaynesboro.org/">
+                                                                        WARM [Waynesboro Area Refuge Ministry] in Waynesboro, VA </a>
+                                                                    <br>
+                                                                    <a
+                                                                        href="https://www.thehaven.org/">
+                                                                        The Haven in Charlottesville, VA </a>
+                                                                        <br>
+                                                                    <a
+                                                                        href="https://pacemshelter.org/">
+                                                                        PACEM in Charlottesville, VA </a>
+                                                                        
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                         <!-- Preservation -->
                                         <div class="tab-pane p-3" id="nav-inner-5-1" role="tabpanel"
                                             aria-labelledby="nav-inner-5-1-tab">
@@ -698,15 +803,16 @@
                                                                     modifications that increase energy efficiency,
                                                                     reduce energy costs, and ensure that homes remain
                                                                     habitable throughout the year.</p>
-                                                                <button class="btn nav-link" 
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#preservation-box-one" type="button"
-                                                                    >More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" data-bs-toggle="tab"
+                                                                            data-bs-target="#preservation-box-one"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="content-item">
-                                                        <div class="card-nope" style="width: 18rem;">
+                                                        <div class="card" style="width: 18rem;">
                                                             <img src="images/circle.svg" class="card-img-top" alt="..."
                                                                 title="Not yet in Policy">
                                                             <div class="card-body">
@@ -716,10 +822,11 @@
                                                                     limitations
                                                                     and new occupants must meet established income
                                                                     requirements.</p>
-                                                                <button class="btn nav-link" 
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#preservation-box-two" type="button"
-                                                                   >More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" data-bs-toggle="tab"
+                                                                            data-bs-target="#preservation-box-two"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -733,10 +840,11 @@
                                                                     purchases
                                                                     the home situated on land owned by the trust,
                                                                     or enters into a deed covenant.</p>
-                                                                <button class="btn nav-link" 
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#preservation-box-three" type="button"
-                                                                    >More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" data-bs-toggle="tab"
+                                                                            data-bs-target="#preservation-box-three"
+                                                                            type="button">More Info.</button>
+                                                                    </div>
                                                             </div>
 
                                                         </div>
@@ -745,22 +853,71 @@
 
                                                 <div class="container content-bottom" id="preservation-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="preservation-box-one"
-                                                            role="tabpanel" >
-                                                            <div class="content-item">In depth information about policy
-                                                                one.
+                                                        <div class="tab-pane fade show active p-3"
+                                                            id="preservation-box-one" role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Repairs and Weatherization</h5>
+                                                                    <p>Louisa County speaks to this goal in their municipal code: <br>
+                                                                        <i>(12)Promote creating and preserving affordable housing suitable for meeting the current and future needs of the county as 
+                                                                        well as a reasonable proportion of the current and future needs of the planning district within which the locality is situated;</i></p>
+                                                                        See <a
+                                                                        href="https://library.municode.com/va/louisa_county/codes/code_of_ordinances?nodeId=CO_CH86LADERE_ARTIGEPR_DIV1AUPUIN_S86-9RECOPL">
+                                                                        Sec. 86-9(12) In Reference to Comprehensive Plan </a>
+                                                                        <br><br>
+                                                                        <img src="images/book.svg" class="box-img-top" alt="..."
+                                                                        title="Policy Brief">
+                                                                        <strong>Policy Brief:</strong> <br> <a
+                                                                    href="https://localhousingsolutions.org/housing-policy-library/weatherization-assistance/">
+                                                                    Weatherization Assistance </a> <br>
+                                                                        <img src="images/clipboard.svg" class="box-img-top" alt="..."
+                                                                            title="Community Resource">
+                                                                        <strong>Community Resources:</strong> <br>
+                                                                        <a
+                                                                            href="https://www.fluvannalouisahousing.org/services">
+                                                                            Fluvanna Louisa Housing Foundation </a>
+
+                                                                          
+
+    
+
+                                                                    </p>
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="preservation-box-two"
-                                                            role="tabpanel" >
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                            role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Affordability Periods</h5>
+                                                                    <p>There are no policies currently in place enforcing affordability periods.</p>
+                                                                    <img src="images/book.svg" class="box-img-top" alt="..."
+                                                                        title="Policy Brief">
+                                                                        <strong>Policy Brief:</strong> <br> <a
+                                                                    href="https://inclusionaryhousing.org/designing-a-policy/affordability-preservation/">
+                                                                    Affordability Preservation Strategy </a> <br>
+
+                                                                    
                                                             </div>
                                                         </div>
                                                         <div class="tab-pane fade show  p-3" id="preservation-box-three"
-                                                            role="tabpanel" >
-                                                            <div class="content-item">In depth information about policy
-                                                                three.
+                                                            role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>Land Trust</h5>
+                                                                <p>There is no Community Land Trust in Louisa County.</p>
+                                                                <img src="images/tools.svg" class="box-img-top"
+                                                                    alt="..." title="Toolkit">
+                                                                    <strong>Toolkit:</strong> <br> 
+                                                                    <a
+                                                                    href="https://groundedsolutions.org/start-upclthub/">
+                                                                    Startup Community Land Trust </a> <br><br>
+
+
+                                                                <img src="images/book.svg" class="box-img-top" alt="..."
+                                                                        title="Policy Brief">
+                                                                        <strong>Policy Brief:</strong> <br> <a
+                                                                    href="https://localhousingsolutions.org/housing-policy-library/community-land-trusts/">
+                                                                    Community Land Trust </a>                                             
+                                                                    
+
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -774,8 +931,7 @@
                         </div>
                     </div>
                     <!-- Albemarle Content -->
-                    <div class="tab-pane show p-3" id="nav-Albemarle" role="tabpanel"
-                        >
+                    <div class="tab-pane show p-3" id="nav-Albemarle" role="tabpanel">
                         <div class="container my-5">
                             <!-- Inner Navbar -->
                             <!-- 
@@ -859,11 +1015,10 @@
                                                                     how
                                                                     its implemented in the locality. Not too verbose</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-one-desc"
+                                                                    <button class="btn nav-link"
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#content-box-one" type="button"
-                                                                        role="tab" aria-controls="content-box-one"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-prevention-box-one" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -880,11 +1035,10 @@
                                                                     is and how
                                                                     its implemented in. Not overly wordy.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-two-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#content-box-two" type="button"
-                                                                        role="tab" aria-controls="content-box-two"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-prevention-box-two" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -899,11 +1053,12 @@
                                                                     the
                                                                     card title and make up the bulk of
                                                                     the card's content.</p>
-                                                                <button class="btn nav-link" id="box-three-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#content-box-three" type="button"
-                                                                    role="tab" aria-controls="content-box-three"
-                                                                    aria-selected="true">More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" 
+                                                                            data-bs-toggle="tab"
+                                                                            data-bs-target="#alb-prevention-box-three" type="button"
+                                                                            >More Info.</button>
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -918,11 +1073,12 @@
                                                                     the
                                                                     card title and make up the bulk of
                                                                     the card's content.</p>
-                                                                <button class="btn nav-link" id="box-three-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#content-box-three" type="button"
-                                                                    role="tab" aria-controls="content-box-three"
-                                                                    aria-selected="true">More Info.</button>
+                                                                    <div class="nav nav" role="tablist">
+                                                                        <button class="btn nav-link" 
+                                                                            data-bs-toggle="tab"
+                                                                            data-bs-target="#alb-prevention-box-four" type="button"
+                                                                            >More Info.</button>
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -931,10 +1087,10 @@
 
                                                 <div class="container content-box" id="preserve-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="content-box-one"
-                                                            role="tabpanel" aria-labelledby="box-1-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                one.
+                                                        <div class="tab-pane fade show active p-3" id="alb-prevention-box-one"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                one.</h5>
                                                                 In depth information about policy one.
                                                                 In depth information about policy one.
                                                                 In depth information about policy one.
@@ -942,22 +1098,31 @@
                                                                 In depth information about policy one.
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="content-box-two"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                        <div class="tab-pane fade show  p-3" id="alb-prevention-box-two"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                two.</h5>
                                                                 In depth information about policy two.
                                                                 In depth information about policy two.
                                                                 In depth information about policy two.
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="content-box-three"
-                                                            role="tabpanel" aria-labelledby="box-3-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                three.
+                                                        <div class="tab-pane fade show  p-3" id="alb-prevention-box-three"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                three.</h5>
                                                                 In depth information about policy three.
                                                                 In depth information about policy three.
                                                                 In depth information about policy three.
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-prevention-box-four"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                Four.</h5>
+                                                                In depth information about policy four.
+                                                                In depth information about policy four.
+                                                                In depth information about policy four.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -983,11 +1148,10 @@
                                                                     how
                                                                     its implemented in the locality. Not too verbose</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-one-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#preserve-box-one" type="button"
-                                                                        role="tab" aria-controls="preserve-box-one"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-incentives-box-one" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1004,11 +1168,10 @@
                                                                     is and how
                                                                     its implemented in. Not overly wordy.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-two-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#preserve-box-two" type="button"
-                                                                        role="tab" aria-controls="preserve-box-two"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-incentives-box-two" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1025,11 +1188,10 @@
                                                                     is and how
                                                                     its implemented in. Not overly wordy.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-two-desc"
+                                                                    <button class="btn nav-link"
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#preserve-box-two" type="button"
-                                                                        role="tab" aria-controls="preserve-box-two"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-incentives-box-three" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1046,11 +1208,10 @@
                                                                     is and how
                                                                     its implemented in. Not overly wordy.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-two-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#preserve-box-two" type="button"
-                                                                        role="tab" aria-controls="preserve-box-two"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-incentives-box-four" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1067,11 +1228,9 @@
                                                                     is and how
                                                                     its implemented in. Not overly wordy.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-two-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#preserve-box-two" type="button"
-                                                                        role="tab" aria-controls="preserve-box-two"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-incentives-box-five" type="button">More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1088,11 +1247,10 @@
                                                                     is and how
                                                                     its implemented in. Not overly wordy.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-two-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#preserve-box-two" type="button"
-                                                                        role="tab" aria-controls="preserve-box-two"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-incentives-box-six" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1103,10 +1261,11 @@
 
                                                 <div class="container content-box" id="produce-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="preserve-box-one"
-                                                            role="tabpanel" aria-labelledby="box-1-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                one.
+                                                        <div class="tab-pane fade show active p-3" id="alb-incentives-box-one"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    one.</h5>
                                                                 In depth information about policy one.
                                                                 In depth information about policy one.
                                                                 In depth information about policy one.
@@ -1114,13 +1273,49 @@
                                                                 In depth information about policy one.
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="preserve-box-two"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                        <div class="tab-pane fade show  p-3" id="alb-incentives-box-two"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                two.</h5>
                                                                 In depth information about policy two.
                                                                 In depth information about policy two.
                                                                 In depth information about policy two.
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-incentives-box-three"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                three.</h5>
+                                                                In depth information about policy three.
+                                                                In depth information about policy three.
+                                                                In depth information about policy three.
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-incentives-box-four"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                four.</h5>
+                                                                In depth information about policy four.
+                                                                In depth information about policy four.
+                                                                In depth information about policy four.
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-incentives-box-five"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                five.</h5>
+                                                                In depth information about policy five.
+                                                                In depth information about policy five.
+                                                                In depth information about policy five.
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-incentives-box-six"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                six.</h5>
+                                                                In depth information about policy six.
+                                                                In depth information about policy six.
+                                                                In depth information about policy six.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1133,18 +1328,17 @@
                                             aria-labelledby="nav-inner-3-1-tab">
 
                                             <div class="container content-wrap">
-                                                <div class="container content-box" id="protect-box-top">
+                                                <div class="container content-box" id="zoning-protect-box-top">
                                                     <div class="content-item">
                                                         <div class="card" style="width: 18rem;">
                                                             <div class="card-body">
                                                                 <h5>Accessory Dwelling Units</h5>
                                                                 <p>Some small tidbit about what this is.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-one-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#protect-box-one" type="button"
-                                                                        role="tab" aria-controls="protect-box-one"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-zoning-box-one" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1154,11 +1348,12 @@
                                                             <div class="card-body">
                                                                 <h5>Infill</h5>
                                                                 <p>description.</p>
-                                                                <button class="btn nav-link" id="box-one-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#protect-box-two" type="button"
-                                                                    role="tab" aria-controls="protect-box-two"
-                                                                    aria-selected="true">More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" 
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#alb-zoning-box-two" type="button"
+                                                                        >More Info.</button>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1169,11 +1364,12 @@
                                                             <div class="card-body">
                                                                 <h5>Short Term Rental</h5>
                                                                 <p>description.</p>
-                                                                <button class="btn nav-link" id="box-one-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#protect-box-two" type="button"
-                                                                    role="tab" aria-controls="protect-box-two"
-                                                                    aria-selected="true">More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" 
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#alb-zoning-box-three" type="button"
+                                                                        >More Info.</button>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1182,18 +1378,30 @@
 
                                                 </div>
 
-                                                <div class="container content-bottom" id="protect-box-bottom">
+                                                <div class="container content-bottom" id="zoning-protect-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="protect-box-one"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                one.
+                                                        <div class="tab-pane fade show active p-3" id="alb-zoning-box-one"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    one.</h5>
+                                                                <p>Policy one stuff.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="protect-box-two"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                        <div class="tab-pane fade show  p-3" id="alb-zoning-box-two"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    two.</h5>
+                                                                <p>Policy two stuff.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-zoning-box-three"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    three.</h5>
+                                                                <p>Policy three things.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1205,18 +1413,17 @@
                                             aria-labelledby="nav-inner-4-1-tab">
 
                                             <div class="container content-wrap">
-                                                <div class="container content-box" id="protect-box-top">
+                                                <div class="container content-box" id="alb-homelessness-protect-box-top">
                                                     <div class="content-item">
                                                         <div class="card" style="width: 18rem;">
                                                             <div class="card-body">
                                                                 <h5>Housing First</h5>
                                                                 <p>Some small tidbit about what this is.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-one-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#protect-box-one" type="button"
-                                                                        role="tab" aria-controls="protect-box-one"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-homelessness-box-one" type="button"
+                                                                        >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1226,11 +1433,12 @@
                                                             <div class="card-body">
                                                                 <h5>Supportive Housing</h5>
                                                                 <p>description.</p>
-                                                                <button class="btn nav-link" id="box-one-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#protect-box-two" type="button"
-                                                                    role="tab" aria-controls="protect-box-two"
-                                                                    aria-selected="true">More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" 
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#alb-homelessness-box-two" type="button"
+                                                                        >More Info.</button>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1241,11 +1449,12 @@
                                                             <div class="card-body">
                                                                 <h5>Shelters</h5>
                                                                 <p>description.</p>
-                                                                <button class="btn nav-link" id="box-one-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#protect-box-two" type="button"
-                                                                    role="tab" aria-controls="protect-box-two"
-                                                                    aria-selected="true">More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" 
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#alb-homelessness-box-three" type="button"
+                                                                        >More Info.</button>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1254,18 +1463,30 @@
 
                                                 </div>
 
-                                                <div class="container content-bottom" id="protect-box-bottom">
+                                                <div class="container content-bottom" id="alb-homelessness-protect-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="protect-box-one"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                one.
+                                                        <div class="tab-pane fade show active p-3" id="alb-homelessness-box-one"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                one.</h5>
+                                                                <p>In depth information about policy
+                                                                    one.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="protect-box-two"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                        <div class="tab-pane fade show  p-3" id="alb-homelessness-box-two"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                two.</h5>
+                                                                <p>In depth information about policy
+                                                                    two.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-homelessness-box-three"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot"><h5>In depth information about policy
+                                                                three.</h5>
+                                                                <p>In depth information about policy
+                                                                    three.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1277,7 +1498,7 @@
                                             aria-labelledby="nav-inner-5-1-tab">
 
                                             <div class="container content-wrap">
-                                                <div class="container content-box" id="protect-box-top">
+                                                <div class="container content-box" id="alb-preservation-protect-box-top">
                                                     <div class="content-item">
                                                         <div class="card" style="width: 18rem;">
                                                             <img src="images/circle-fill.svg" class="card-img-top"
@@ -1286,27 +1507,27 @@
                                                                 <h5>Repairs and Weatherization</h5>
                                                                 <p>Some small tidbit about what this is.</p>
                                                                 <div class="nav nav" role="tablist">
-                                                                    <button class="btn nav-link" id="box-one-desc"
+                                                                    <button class="btn nav-link" 
                                                                         data-bs-toggle="tab"
-                                                                        data-bs-target="#protect-box-one" type="button"
-                                                                        role="tab" aria-controls="protect-box-one"
-                                                                        aria-selected="true">More Info.</button>
+                                                                        data-bs-target="#alb-preservation-box-one" type="button"
+                                                                       >More Info.</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="content-item">
-                                                        <div class="card-nope" style="width: 18rem;">
+                                                        <div class="card" style="width: 18rem;">
                                                             <img src="images/circle.svg" class="card-img-top" alt="..."
                                                                 title="Not yet in Policy">
                                                             <div class="card-body">
                                                                 <h5>Affordability Periods</h5>
                                                                 <p>description.</p>
-                                                                <button class="btn nav-link" id="box-one-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#protect-box-two" type="button"
-                                                                    role="tab" aria-controls="protect-box-two"
-                                                                    aria-selected="true">More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" 
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#alb-preservation-box-two" type="button"
+                                                                       >More Info.</button>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1319,11 +1540,12 @@
                                                             <div class="card-body">
                                                                 <h5>Land Trust</h5>
                                                                 <p>description.</p>
-                                                                <button class="btn nav-link" id="box-one-desc"
-                                                                    data-bs-toggle="tab"
-                                                                    data-bs-target="#protect-box-two" type="button"
-                                                                    role="tab" aria-controls="protect-box-two"
-                                                                    aria-selected="true">More Info.</button>
+                                                                <div class="nav nav" role="tablist">
+                                                                    <button class="btn nav-link" 
+                                                                        data-bs-toggle="tab"
+                                                                        data-bs-target="#alb-preservation-box-three" type="button"
+                                                                       >More Info.</button>
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -1332,18 +1554,33 @@
 
                                                 </div>
 
-                                                <div class="container content-bottom" id="protect-box-bottom">
+                                                <div class="container content-bottom" id="alb-preservation-protect-box-bottom">
                                                     <div class="tab-content">
-                                                        <div class="tab-pane fade show active p-3" id="protect-box-one"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                one.
+                                                        <div class="tab-pane fade show active p-3" id="alb-preservation-box-one"
+                                                            role="tabpanel">
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    one.</h5>
+                                                                    <p>In depth information about policy
+                                                                        one.</p>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade show  p-3" id="protect-box-two"
-                                                            role="tabpanel" aria-labelledby="box-2-desc">
-                                                            <div class="content-item">In depth information about policy
-                                                                two.
+                                                        <div class="tab-pane fade show  p-3" id="alb-preservation-box-two"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    two.</h5>
+                                                                    <p>In depth information about policy
+                                                                        two.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade show  p-3" id="alb-preservation-box-three"
+                                                            role="tabpanel" >
+                                                            <div class="content-item-bot">
+                                                                <h5>In depth information about policy
+                                                                    three.</h5>
+                                                                    <p>In depth information about policy
+                                                                        three.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1356,19 +1593,19 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- Charlottesville Content -->
+                
                     <div class="tab-pane p-3" id="nav-Charlottesville" role="tabpanel">
                         <div class="container my-5">
                             <div class="row">
                                 <div class="col sidebar">
                                     <div class="nav flex-column nav-tabs" id="nav-tab" role="tablist">
                                         <button class="nav-link active" id="nav-inner-1-3-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-inner-1-3" type="button" role="tab"
-                                            >One-3</button>
+                                            data-bs-target="#nav-inner-1-3" type="button" role="tab">One-3</button>
 
                                         <button class="nav-link" id="nav-inner-2-3-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-inner-2-3" type="button" role="tab"
-                                            >Two-3</button>
+                                            data-bs-target="#nav-inner-2-3" type="button" role="tab">Two-3</button>
 
                                         <button class="nav-link" id="nav-inner-3-3-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-inner-3-3" type="button" role="tab"
@@ -1380,26 +1617,29 @@
                                         <div class="tab-pane show active p-3" id="nav-inner-1-3" role="tabpanel"
                                             aria-labelledby="nav-inner-1-3-tab">
                                             <h2>One</h2>
-                                            <p>OneOneOneOneOneOneOneOneOneOne</p>
+                                            <p>Placeholder</p>
                                         </div>
                                         <div class="tab-pane p-3" id="nav-inner-2-3" role="tabpanel"
                                             aria-labelledby="nav-inner-2-3-tab">
                                             <h2>Two</h2>
-                                            <p>TwoTwoTwoTwoTwoTwoTwoTwoTwoTwo</p>
+                                            <p>Placeholder</p>
                                         </div>
                                         <div class="tab-pane p-3" id="nav-inner-3-3" role="tabpanel"
                                             aria-labelledby="nav-inner-3-3-tab">
                                             <h2>Three</h2>
-                                            <p>ThreeThreeThreeThreeThreeThree</p>
+                                            <p>Placeholder</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                
+                
                 </div>
             </div>
         </div>
+        <!-- Information Focus -->
         <div class="tab-pane fade" id="info-focus" role="tabpanel">
             <!-- Info Tab -->
             <div class="container my-5" id="info-f">
@@ -1435,9 +1675,10 @@
 
 
     <hr>
+    
 
 
-   
+
 
 
 </body>
