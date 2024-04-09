@@ -25,14 +25,14 @@
 }
 
 .content-item {
-    background-color: indianred;
+    background-color: ghostwhite;
     margin: 10px;
     padding: 5px;
     text-align: center;
 }
 
 .content-item-bot {
-    background-color: blueviolet;
+    background-color: lightblue;
     margin: 10px;
     padding: 5px;
     text-align: center;
@@ -65,8 +65,8 @@
 
 
 .card-img-top {
-    width: 64px;
-    height: 64px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
