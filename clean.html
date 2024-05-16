@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- TODO: Extract to CSS file -->
+    <style>
+        .flex-column {background-color:red;}
+        .row {background-color: aliceblue;justify-content: center; }
+        .col-2 {background-color: yellow;}
+        .container{justify-content: center; align-items: center;}
+        .card{padding: 2em; margin: 2em;}
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        Locality Selection
+        <ul class="nav nav-tabs" id="CitySelectTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="city1-tab" data-bs-toggle="tab" data-bs-target="#city1-tab-pane"
+                    type="button" role="tab" aria-controls="city1-tab-pane" aria-selected="true">Louisa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="city2-tab" data-bs-toggle="tab" data-bs-target="#city2-tab-pane"
+                    type="button" role="tab" aria-controls="city2-tab-pane"
+                    aria-selected="false">Charlottesville</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="city3-tab" data-bs-toggle="tab" data-bs-target="#city3-tab-pane"
+                    type="button" role="tab" aria-controls="city3-tab-pane" aria-selected="false">Albemarle</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="city4-tab" data-bs-toggle="tab" data-bs-target="#city4-tab-pane"
+                    type="button" role="tab" aria-controls="city4-tab-pane" aria-selected="false">Fluvanna</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="city5-tab" data-bs-toggle="tab" data-bs-target="#city5-tab-pane"
+                    type="button" role="tab" aria-controls="city5-tab-pane" aria-selected="false">Nelson</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="city6-tab" data-bs-toggle="tab" data-bs-target="#city6-tab-pane"
+                    type="button" role="tab" aria-controls="city6-tab-pane" aria-selected="false">Greene</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="CitySelectTabContent">
+            <div class="tab-pane fade show active" id="city1-tab-pane" role="tabpanel" aria-labelledby="city1-tab"
+                tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" id="city1PolicyNavContainer">
+                            Policy Select One
+                            <ul class="nav flex-column" id="PolicyCity1Tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="LouisaPolicyOnebutton1" data-bs-toggle="tab"
+                                        data-bs-target="#Louisa-policy1-pane">Displacement Prevention</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="LouisaPolicyOnebutton2" data-bs-toggle="tab"
+                                        data-bs-target="#Louisa-policy2-pane">Developer Incentives</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="LouisaPolicyOnebutton3" data-bs-toggle="tab"
+                                        data-bs-target="#Louisa-policy3-pane">Zoning</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="LouisaPolicyOnebutton4" data-bs-toggle="tab"
+                                        data-bs-target="#Louisa-policy4-pane">Homelessness</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="LouisaPolicyOnebutton5" data-bs-toggle="tab"
+                                        data-bs-target="#Louisa-policy5-pane">Preservation</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="city1PolicyContainer">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="Louisa-policy1-pane" role="tabpanel"
+                                    aria-labelledby="LouisaPolicyOnebutton1">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city1-policy1-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city1Policy1Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy1-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city1Policy1Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy1-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city1Policy1Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy1-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO: Body 4</p>
+                                                            <button class="nav-link" id="city1Policy1Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy1-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city1-policy1-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy1Strategy1">
+                                                    TODO:deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy1-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy1Strategy2">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy1-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy1Strategy3">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy1-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy1Strategy4">
+                                                    TODO: deep dive
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Louisa-policy2-pane" role="tabpanel"
+                                    aria-labelledby="LouisaPolicyOnebutton2">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city1-policy2-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city1Policy2Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy2-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city1Policy2Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy2-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city1Policy2Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy2-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 4</p>
+                                                            <button class="nav-link" id="city1Policy2Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy2-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 5</p>
+                                                            <button class="nav-link" id="city1Policy2Strategy5"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy2-strategy5-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 6</p>
+                                                            <button class="nav-link" id="city1Policy2Strategy6"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy2-strategy6-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city1-policy2-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy2Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy2-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy2Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy2-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy2Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy2-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy2Strategy4">
+                                                    TODO: Deep Dive 4
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy2-strategy5-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy2Strategy5">
+                                                    TODO: Deep Dive 5
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy2-strategy6-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy2Strategy6">
+                                                    TODO: Deep Dive 6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Louisa-policy3-pane" role="tabpanel"
+                                    aria-labelledby="LouisaPolicyOnebutton3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city1-policy3-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city1Policy3Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy3-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city1Policy3Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy3-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city1Policy3Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy3-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city1-policy3-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy3Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy3-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy3Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy3-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy3Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Louisa-policy4-pane" role="tabpanel"
+                                    aria-labelledby="LouisaPolicyOnebutton4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city1-policy4-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city1Policy4Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy4-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city1Policy4Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy4-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city1Policy4Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy4-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city1-policy4-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy4Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy4-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy4Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy4-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy4Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Louisa-policy5-pane" role="tabpanel"
+                                    aria-labelledby="LouisaPolicyOnebutton5">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city1-policy5-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city1Policy5Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy5-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city1Policy5Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy5-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city1Policy5Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city1-policy5-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city1-policy5-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy5Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy5-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy5Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city1-policy5-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city1Policy5Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="city2-tab-pane" role="tabpanel" aria-labelledby="city2-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" id="city2PolicyNavContainer">
+                            Policy Select
+                            <ul class="nav flex-column" id="PolicyCity2Tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="CharlottesvillePolicyOnebutton1" data-bs-toggle="tab"
+                                        data-bs-target="#Charlottesville-policy1-pane">Displacement Prevention</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="CharlottesvillePolicyOnebutton2" data-bs-toggle="tab"
+                                        data-bs-target="#Charlottesville-policy2-pane">Developer Incentives</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="CharlottesvillePolicyOnebutton3" data-bs-toggle="tab"
+                                        data-bs-target="#Charlottesville-policy3-pane">Zoning</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="CharlottesvillePolicyOnebutton4" data-bs-toggle="tab"
+                                        data-bs-target="#Charlottesville-policy4-pane">Homelessness</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="CharlottesvillePolicyOnebutton5" data-bs-toggle="tab"
+                                        data-bs-target="#Charlottesville-policy5-pane">Preservation</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="city2PolicyContainer">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="Charlottesville-policy1-pane" role="tabpanel"
+                                    aria-labelledby="CharlottesvillePolicyOnebutton1">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city2-policy1-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city2Policy1Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy1-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city2Policy1Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy1-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city2Policy1Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy1-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO: Body 4</p>
+                                                            <button class="nav-link" id="city2Policy1Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy1-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city2-policy1-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy1Strategy1">
+                                                    TODO:deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy1-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy1Strategy2">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy1-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy1Strategy3">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy1-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy1Strategy4">
+                                                    TODO: deep dive
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Charlottesville-policy2-pane" role="tabpanel"
+                                    aria-labelledby="CharlottesvillePolicyOnebutton2">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city2-policy2-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city2Policy2Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy2-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city2Policy2Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy2-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city2Policy2Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy2-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 4</p>
+                                                            <button class="nav-link" id="city2Policy2Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy2-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 5</p>
+                                                            <button class="nav-link" id="city2Policy2Strategy5"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy2-strategy5-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 6</p>
+                                                            <button class="nav-link" id="city2Policy2Strategy6"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy2-strategy6-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city2-policy2-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy2Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy2-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy2Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy2-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy2Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy2-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy2Strategy4">
+                                                    TODO: Deep Dive 4
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy2-strategy5-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy2Strategy5">
+                                                    TODO: Deep Dive 5
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy2-strategy6-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy2Strategy6">
+                                                    TODO: Deep Dive 6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Charlottesville-policy3-pane" role="tabpanel"
+                                    aria-labelledby="CharlottesvillePolicyOnebutton3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city2-policy3-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city2Policy3Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy3-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city2Policy3Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy3-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city2Policy3Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy3-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city2-policy3-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy3Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy3-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy3Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy3-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy3Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Charlottesville-policy4-pane" role="tabpanel"
+                                    aria-labelledby="CharlottesvillePolicyOnebutton4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city2-policy4-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city2Policy4Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy4-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city2Policy4Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy4-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city2Policy4Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy4-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city2-policy4-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy4Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy4-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy4Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy4-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy4Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Charlottesville-policy5-pane" role="tabpanel"
+                                    aria-labelledby="CharlottesvillePolicyOnebutton5">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city2-policy5-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city2Policy5Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy5-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city2Policy5Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy5-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city2Policy5Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city2-policy5-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city2-policy5-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy5Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy5-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy5Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city2-policy5-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city2Policy5Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="city3-tab-pane" role="tabpanel" aria-labelledby="city3-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" id="city3PolicyNavContainer">
+                            Policy Select
+                            <ul class="nav flex-column" id="PolicyCity3Tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="AlbemarlePolicyOnebutton1" data-bs-toggle="tab"
+                                        data-bs-target="#Albemarle-policy1-pane">Displacement Prevention</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="AlbemarlePolicyOnebutton2" data-bs-toggle="tab"
+                                        data-bs-target="#Albemarle-policy2-pane">Developer Incentives</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="AlbemarlePolicyOnebutton3" data-bs-toggle="tab"
+                                        data-bs-target="#Albemarle-policy3-pane">Zoning</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="AlbemarlePolicyOnebutton4" data-bs-toggle="tab"
+                                        data-bs-target="#Albemarle-policy4-pane">Homelessness</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="AlbemarlePolicyOnebutton5" data-bs-toggle="tab"
+                                        data-bs-target="#Albemarle-policy5-pane">Preservation</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="city3PolicyContainer">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="Albemarle-policy1-pane" role="tabpanel"
+                                    aria-labelledby="AlbemarlePolicyOnebutton1">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city3-policy1-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city3Policy1Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy1-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city3Policy1Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy1-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city3Policy1Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy1-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO: Body 4</p>
+                                                            <button class="nav-link" id="city3Policy1Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy1-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city3-policy1-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy1Strategy1">
+                                                    TODO:deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy1-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy1Strategy2">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy1-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy1Strategy3">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy1-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy1Strategy4">
+                                                    TODO: deep dive
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Albemarle-policy2-pane" role="tabpanel"
+                                    aria-labelledby="AlbemarlePolicyOnebutton2">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city3-policy2-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city3Policy2Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy2-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city3Policy2Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy2-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city3Policy2Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy2-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 4</p>
+                                                            <button class="nav-link" id="city3Policy2Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy2-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 5</p>
+                                                            <button class="nav-link" id="city3Policy2Strategy5"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy2-strategy5-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 6</p>
+                                                            <button class="nav-link" id="city3Policy2Strategy6"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy2-strategy6-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city3-policy2-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy2Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy2-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy2Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy2-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy2Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy2-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy2Strategy4">
+                                                    TODO: Deep Dive 4
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy2-strategy5-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy2Strategy5">
+                                                    TODO: Deep Dive 5
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy2-strategy6-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy2Strategy6">
+                                                    TODO: Deep Dive 6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Albemarle-policy3-pane" role="tabpanel"
+                                    aria-labelledby="AlbemarlePolicyOnebutton3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city3-policy3-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city3Policy3Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy3-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city3Policy3Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy3-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city3Policy3Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy3-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city3-policy3-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy3Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy3-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy3Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy3-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy3Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Albemarle-policy4-pane" role="tabpanel"
+                                    aria-labelledby="AlbemarlePolicyOnebutton4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city3-policy4-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city3Policy4Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy4-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city3Policy4Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy4-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city3Policy4Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy4-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city3-policy4-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy4Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy4-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy4Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy4-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy4Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Albemarle-policy5-pane" role="tabpanel"
+                                    aria-labelledby="AlbemarlePolicyOnebutton5">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city3-policy5-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city3Policy5Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy5-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city3Policy5Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy5-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city3Policy5Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city3-policy5-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city3-policy5-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy5Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy5-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy5Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city3-policy5-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city3Policy5Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="city4-tab-pane" role="tabpanel" aria-labelledby="city4-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" id="city4PolicyNavContainer">
+                            Policy Select
+                            <ul class="nav flex-column" id="PolicyCity4Tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="FluvannaPolicyOnebutton1" data-bs-toggle="tab"
+                                        data-bs-target="#Fluvanna-policy1-pane">Displacement Prevention</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="FluvannaPolicyOnebutton2" data-bs-toggle="tab"
+                                        data-bs-target="#Fluvanna-policy2-pane">Developer Incentives</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="FluvannaPolicyOnebutton3" data-bs-toggle="tab"
+                                        data-bs-target="#Fluvanna-policy3-pane">Zoning</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="FluvannaPolicyOnebutton4" data-bs-toggle="tab"
+                                        data-bs-target="#Fluvanna-policy4-pane">Homelessness</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="FluvannaPolicyOnebutton5" data-bs-toggle="tab"
+                                        data-bs-target="#Fluvanna-policy5-pane">Preservation</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="city4PolicyContainer">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="Fluvanna-policy1-pane" role="tabpanel"
+                                    aria-labelledby="FluvannaPolicyOnebutton1">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city4-policy1-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city4Policy1Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy1-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city4Policy1Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy1-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city4Policy1Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy1-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO: Body 4</p>
+                                                            <button class="nav-link" id="city4Policy1Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy1-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city4-policy1-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy1Strategy1">
+                                                    TODO:deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy1-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy1Strategy2">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy1-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy1Strategy3">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy1-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy1Strategy4">
+                                                    TODO: deep dive
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Fluvanna-policy2-pane" role="tabpanel"
+                                    aria-labelledby="FluvannaPolicyOnebutton2">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city4-policy2-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city4Policy2Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy2-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city4Policy2Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy2-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city4Policy2Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy2-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 4</p>
+                                                            <button class="nav-link" id="city4Policy2Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy2-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 5</p>
+                                                            <button class="nav-link" id="city4Policy2Strategy5"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy2-strategy5-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 6</p>
+                                                            <button class="nav-link" id="city4Policy2Strategy6"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy2-strategy6-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city4-policy2-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy2Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy2-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy2Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy2-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy2Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy2-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy2Strategy4">
+                                                    TODO: Deep Dive 4
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy2-strategy5-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy2Strategy5">
+                                                    TODO: Deep Dive 5
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy2-strategy6-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy2Strategy6">
+                                                    TODO: Deep Dive 6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Fluvanna-policy3-pane" role="tabpanel"
+                                    aria-labelledby="FluvannaPolicyOnebutton3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city4-policy3-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city4Policy3Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy3-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city4Policy3Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy3-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city4Policy3Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy3-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city4-policy3-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy3Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy3-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy3Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy3-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy3Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Fluvanna-policy4-pane" role="tabpanel"
+                                    aria-labelledby="FluvannaPolicyOnebutton4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city4-policy4-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city4Policy4Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy4-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city4Policy4Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy4-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city4Policy4Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy4-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city4-policy4-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy4Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy4-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy4Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy4-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy4Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Fluvanna-policy5-pane" role="tabpanel"
+                                    aria-labelledby="FluvannaPolicyOnebutton5">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city4-policy5-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city4Policy5Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy5-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city4Policy5Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy5-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city4Policy5Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city4-policy5-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city4-policy5-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy5Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy5-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy5Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city4-policy5-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city4Policy5Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="city5-tab-pane" role="tabpanel" aria-labelledby="city5-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" id="city5PolicyNavContainer">
+                            Policy Select
+                            <ul class="nav flex-column" id="PolicyCity5Tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="NelsonPolicyOnebutton1" data-bs-toggle="tab"
+                                        data-bs-target="#Nelson-policy1-pane">Displacement Prevention</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="NelsonPolicyOnebutton2" data-bs-toggle="tab"
+                                        data-bs-target="#Nelson-policy2-pane">Developer Incentives</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="NelsonPolicyOnebutton3" data-bs-toggle="tab"
+                                        data-bs-target="#Nelson-policy3-pane">Zoning</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="NelsonPolicyOnebutton4" data-bs-toggle="tab"
+                                        data-bs-target="#Nelson-policy4-pane">Homelessness</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="NelsonPolicyOnebutton5" data-bs-toggle="tab"
+                                        data-bs-target="#Nelson-policy5-pane">Preservation</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="city5PolicyContainer">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="Nelson-policy1-pane" role="tabpanel"
+                                    aria-labelledby="NelsonPolicyOnebutton1">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city5-policy1-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city5Policy1Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy1-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city5Policy1Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy1-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city5Policy1Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy1-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO: Body 4</p>
+                                                            <button class="nav-link" id="city5Policy1Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy1-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city5-policy1-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy1Strategy1">
+                                                    TODO:deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy1-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy1Strategy2">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy1-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy1Strategy3">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy1-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy1Strategy4">
+                                                    TODO: deep dive
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Nelson-policy2-pane" role="tabpanel"
+                                    aria-labelledby="NelsonPolicyOnebutton2">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city5-policy2-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city5Policy2Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy2-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city5Policy2Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy2-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city5Policy2Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy2-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 4</p>
+                                                            <button class="nav-link" id="city5Policy2Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy2-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 5</p>
+                                                            <button class="nav-link" id="city5Policy2Strategy5"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy2-strategy5-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 6</p>
+                                                            <button class="nav-link" id="city5Policy2Strategy6"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy2-strategy6-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city5-policy2-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy2Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy2-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy2Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy2-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy2Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy2-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy2Strategy4">
+                                                    TODO: Deep Dive 4
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy2-strategy5-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy2Strategy5">
+                                                    TODO: Deep Dive 5
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy2-strategy6-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy2Strategy6">
+                                                    TODO: Deep Dive 6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Nelson-policy3-pane" role="tabpanel"
+                                    aria-labelledby="NelsonPolicyOnebutton3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city5-policy3-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city5Policy3Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy3-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city5Policy3Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy3-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city5Policy3Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy3-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city5-policy3-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy3Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy3-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy3Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy3-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy3Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Nelson-policy4-pane" role="tabpanel"
+                                    aria-labelledby="NelsonPolicyOnebutton4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city5-policy4-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city5Policy4Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy4-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city5Policy4Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy4-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city5Policy4Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy4-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city5-policy4-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy4Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy4-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy4Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy4-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy4Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Nelson-policy5-pane" role="tabpanel"
+                                    aria-labelledby="NelsonPolicyOnebutton5">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city5-policy5-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city5Policy5Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy5-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city5Policy5Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy5-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city5Policy5Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city5-policy5-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city5-policy5-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy5Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy5-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy5Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city5-policy5-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city5Policy5Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="city6-tab-pane" role="tabpanel" aria-labelledby="city6-tab" tabindex="0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2" id="city6PolicyNavContainer">
+                            Policy Select
+                            <ul class="nav flex-column" id="PolicyCity6Tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="GreenePolicyOnebutton1" data-bs-toggle="tab"
+                                        data-bs-target="#Greene-policy1-pane">Displacement Prevention</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="GreenePolicyOnebutton2" data-bs-toggle="tab"
+                                        data-bs-target="#Greene-policy2-pane">Developer Incentives</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="GreenePolicyOnebutton3" data-bs-toggle="tab"
+                                        data-bs-target="#Greene-policy3-pane">Zoning</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="GreenePolicyOnebutton4" data-bs-toggle="tab"
+                                        data-bs-target="#Greene-policy4-pane">Homelessness</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="GreenePolicyOnebutton5" data-bs-toggle="tab"
+                                        data-bs-target="#Greene-policy5-pane">Preservation</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6" id="city6PolicyContainer">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="Greene-policy1-pane" role="tabpanel"
+                                    aria-labelledby="GreenePolicyOnebutton1">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city6-policy1-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city6Policy1Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy1-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city6Policy1Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy1-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city6Policy1Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy1-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO: Body 4</p>
+                                                            <button class="nav-link" id="city6Policy1Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy1-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city6-policy1-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy1Strategy1">
+                                                    TODO:deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy1-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy1Strategy2">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy1-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy1Strategy3">
+                                                    TODO: deep dive
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy1-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy1Strategy4">
+                                                    TODO: deep dive
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Greene-policy2-pane" role="tabpanel"
+                                    aria-labelledby="GreenePolicyOnebutton2">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city6-policy2-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 1</p>
+                                                            <button class="nav-link" id="city6Policy2Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy2-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 2</p>
+                                                            <button class="nav-link" id="city6Policy2Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy2-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 3</p>
+                                                            <button class="nav-link" id="city6Policy2Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy2-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 4</p>
+                                                            <button class="nav-link" id="city6Policy2Strategy4"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy2-strategy4-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 5</p>
+                                                            <button class="nav-link" id="city6Policy2Strategy5"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy2-strategy5-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body 6</p>
+                                                            <button class="nav-link" id="city6Policy2Strategy6"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy2-strategy6-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city6-policy2-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy2Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy2-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy2Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy2-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy2Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy2-strategy4-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy2Strategy4">
+                                                    TODO: Deep Dive 4
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy2-strategy5-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy2Strategy5">
+                                                    TODO: Deep Dive 5
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy2-strategy6-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy2Strategy6">
+                                                    TODO: Deep Dive 6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Greene-policy3-pane" role="tabpanel"
+                                    aria-labelledby="GreenePolicyOnebutton3">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city6-policy3-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city6Policy3Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy3-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city6Policy3Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy3-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city6Policy3Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy3-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city6-policy3-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy3Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy3-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy3Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy3-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy3Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Greene-policy4-pane" role="tabpanel"
+                                    aria-labelledby="GreenePolicyOnebutton4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city6-policy4-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city6Policy4Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy4-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city6Policy4Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy4-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city6Policy4Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy4-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city6-policy4-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy4Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy4-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy4Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy4-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy4Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Greene-policy5-pane" role="tabpanel"
+                                    aria-labelledby="GreenePolicyOnebutton5">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <ul class="nav nav" id="city6-policy5-nav" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body1</p>
+                                                            <button class="nav-link" id="city6Policy5Strategy1"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy5-strategy1-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body2</p>
+                                                            <button class="nav-link" id="city6Policy5Strategy2"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy5-strategy2-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">TODO:Title</h5>
+                                                            <p class="card-body">TODO:Body3</p>
+                                                            <button class="nav-link" id="city6Policy5Strategy3"
+                                                                data-bs-toggle="tab"
+                                                                data-bs-target="#city6-policy5-strategy3-pane">More
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade" id="city6-policy5-strategy1-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy5Strategy1">
+                                                    TODO: Deep Dive 1
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy5-strategy2-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy5Strategy2">
+                                                    TODO: Deep Dive 2
+                                                </div>
+                                                <div class="tab-pane fade" id="city6-policy5-strategy3-pane"
+                                                    role="tabpanel" aria-labelledby="city6Policy5Strategy3">
+                                                    TODO: Deep Dive 3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
