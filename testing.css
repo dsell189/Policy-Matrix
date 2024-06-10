@@ -1,0 +1,14 @@
+#matrix{
+    border: 2px solid yellow;
+    background-color: gainsboro;
+    padding: 1em;
+}
+.col-1{
+    background-color: gray;
+}
+.col-11{
+    background-color: blueviolet;
+}
+.card-group{
+    gap: 1em;
+}

@@ -1,0 +1,85 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title{
+    font-size: x-large;
+    text-align: center;
+}
+
+.card-body{
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+
+
+.card-group{
+    gap: 1em;
+    padding: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-10 {
+    background-image: url("./images/bgSchematic.png");
+    background-size: cover;
+}
+
+.col-2 {
+    border: 2px solid black;
+}
+
+.content-item-bot{
+    padding: .5em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: .5em;
+    border-right: .5em black solid;
+    border-bottom: .5em black solid;
+    border-top: .5em black solid;
+    margin-bottom: .5em;
+    
+    background: linear-gradient(90deg, rgba(128,128,128,1) 0%, rgba(199,199,199,1) 50%, rgba(128,128,128,1) 100%); 
+
+}
+
+.content-item-bot > p {
+    text-align: center;
+}
+
+hr {
+    border-top: 10px dotted black;
+}
+
+.strategy-title {
+    text-decoration: double underline overline black;
+    text-decoration-thickness: 2px;
+    font-size: 2em;
+}
+img {
+    height: 3em;
+}
+
+.sideways{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
